@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <title>Other Extension Tasks</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css\a1.css" />
+    <link rel="stylesheet" href="" />
+  </head>
+
+  <body>
+    <nav
+      class="navbar navbar-default navbar-static-top"
+      style="
+        background-color: #003366;
+        padding-top: 15px;
+        padding-bottom: 10px;
+        padding-left: 50px;
+        border-top: 4px solid #ffcc00;
+        border-bottom: 3px solid #ffcc00;
+      "
+    >
+      <a class="navbar-brand" href="https://www.nitj.ac.in/">
+        <div class="logo-image">
+          <img src="images\logowhite.png" class="img-fluid" />
+        </div>
+      </a>
+    </nav>
+    <div class="container">
+      <div class="jumbotron vertical-center">
+        <div class="container_jumbo">
+          <h1>Other Extension Task:</h1>
+          <p id="count">1st Activity Details</p>
+        </div>
+      </div>
+      <form id="myform" class="form-group" action="index.html" method="get">
+        <label for="act">Name of the activity:</label>
+        <input
+          class="form-control"
+          id="Act"
+          type="text"
+          name="act"
+          placeholder="Activity Name"
+          required
+        />
+        <label for="instituteOutside"
+          >Name of institute involved(Outside):</label
+        >
+        <input
+          class="form-control"
+          id="InstOut"
+          type="text"
+          name="instituteOutside"
+          placeholder="Institute(Outside)"
+          required
+        />
+        <label for="facultyOutside">Name of faculty involved(Outside):</label>
+        <input
+          class="form-control"
+          id="FacOut"
+          type="text"
+          name="facultyOutside"
+          placeholder="Faculty(Outside)"
+          required
+        />
+        <label for="facNit">Name of faculty involved(NITJ):</label>
+        <input
+          class="form-control"
+          id="FacNit"
+          type="text"
+          name="facNit"
+          placeholder="Faculty(NITJ)"
+          required
+        />
+        <p></p>
+
+        <p></p>
+        <button
+          class="btn btn-success"
+          style="background-color: green"
+          type="button"
+          onclick="add()"
+        >
+          Add Project
+        </button>
+        <input
+          type="submit"
+          class="btn btn-info"
+          value="Submit"
+          onclick="sub()"
+        />
+        <button type="button" class="btn btn-dark" id="bck" onclick="back()">
+          Back to last Project
+        </button>
+        <a
+          id="bck"
+          href="index.html"
+          class="previous"
+          style="border-color: cadetblue"
+          >&laquo; Activity</a
+        >
+      </form>
+
+      <br />
+      <table id="tb">
+        <th>Name of the activity</th>
+        <th>Name of institute involved(Outside)</th>
+        <th>Name of faculty involved(Outside)</th>
+        <th>Name of faculty involved(Outside)</th>
+      </table>
+      <br />
+      <br />
+    </div>
+    <div class="footer">
+      <div class="container2">© Copyright 2020, NIT Jalandhar</div>
+    </div>
+    <script src="js\k.js"></script>
+  </body>
+</html>

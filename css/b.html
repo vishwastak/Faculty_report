@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+      <title>Research Publications(International Journals)</title>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">    
+      <link rel="stylesheet" href="css\bootstrap.css">
+    <link rel="stylesheet" href="">
+  </head>
+  
+<body> 
+  <nav class="navbar navbar-default navbar-static-top" style="background-color:  #003366; padding-top: 15px; padding-bottom: 10px ; padding-left: 50px; border-top :4px solid #ffcc00 ; border-bottom :3px solid #ffcc00 ;">
+   <a class="navbar-brand" href="https://www.nitj.ac.in/">
+      <div class="logo-image">
+        <img src="images\logowhite.png" class="img-fluid">
+      </div>
+    </a>
+  </nav>
+  <div class="container">
+  <div class="jumbotron vertical-center">
+  <div class="container_jumbo">
+    <h1>Research Publications (International Journals):</h1>
+    <p id='count' >1st Paper Details</p>
+  </div>
+  </div>
+  <form id="myform" class="form-group" action="index.html"method="get">
+   
+    <label for="auth">Author Name(sequence as in paper):</label>
+    <input class="form-control"id="Author" type="text" name="auth" placeholder="Author Name"required>
+    <label for="Title of Paper">Title of Paper:</label>
+    <input class="form-control"id="Title" type="text" name="Title of Paper" placeholder="Title of Paper"required>
+    <label for=" Journal Name">Journal Name:</label>
+    <input class="form-control" id="JName" type="text" name="Journal Name" placeholder="Name"required>
+    <label for="Vol. No.">Vol. No.</label>
+    <input class="form-control" id="VolNo" type="number" name="No." placeholder="No."required>
+    <label for="Year">Year</label>
+    <input class="form-control" id="Year" type="number" name="Year" placeholder="Year"required>
+    <label for="Page Nos">Page No. </label>
+    <input class="form-control" id="Page" type="number" name="Page Nos" placeholder="Page Nos"required>
+<p></p>
+
+  <button class="btn btn-success" style="background-color:green;"type="button" onclick="add()"> Add Project</button>
+  <input type="submit"  class="btn btn-info" value="Submit" onclick="sub()">
+  <button type="button" class="btn btn-dark" id="bck" onclick="back()">Back to last Project</button>
+  <a id="bck" href="index.html" class="previous" style="border-color: cadetblue;">&laquo; Activity</a>
+  </form>
+  
+  <br>
+<table id="tb">
+  <th>Author Name</th>
+  <th>Title of Paper</th>
+  <th>Journal Name</th>
+  <th>Vol. No.</th>
+  <th>Year</th>
+  <th>Page No.</th>  
+</table>
+<br>
+<br>
+</div>
+<div class="footer" >
+  <div class="container2">
+           © Copyright 2020, NIT Jalandhar      
+         
+  </div>
+</div>
+<script src="js\b.js"></script>
+  </body>
+</html>

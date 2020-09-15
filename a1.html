@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Project</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css\a1.css" />
+  </head>
+
+  <body>
+    <nav
+      class="navbar navbar-default navbar-static-top"
+      style="
+        background-color: #003366;
+        padding-top: 15px;
+        padding-bottom: 10px;
+        padding-left: 50px;
+        border-top: 4px solid #ffcc00;
+        border-bottom: 3px solid #ffcc00;
+      "
+    >
+      <a class="navbar-brand" href="https://www.nitj.ac.in/">
+        <div class="logo-image">
+          <img src="images\logowhite.png" class="img-fluid" />
+        </div>
+      </a>
+    </nav>
+    <div class="container">
+      <div class="jumbotron vertical-center">
+        <div class="container_jumbo">
+          <h1>Project and Thesis:</h1>
+        </div>
+        <p id="count">1st Project Details</p>
+      </div>
+
+      <form id="myform" class="form-group" action="index.html" method="get">
+        <label for="level">Level:</label>
+        <input
+          class="form-control"
+          id="Level"
+          type="number"
+          name="level"
+          placeholder="Level"
+          required
+        />
+        <label for="Title of Project/Thesis">Title of Project/Thesis:</label>
+        <input
+          class="form-control"
+          id="Title"
+          type="text"
+          name="Title of Project/Thesis"
+          placeholder="Title of Project/Thesis"
+          required
+        />
+        <label for="Name of Student">Student Name:</label>
+        <input
+          class="form-control"
+          id="StName"
+          type="text"
+          name="Student Name"
+          placeholder="Name"
+          required
+        />
+        <label for="Name of Supervisor">Supervisor Name (if any):</label>
+        <input
+          class="form-control"
+          id="SpName"
+          type="text"
+          name="Supervisor Name"
+          placeholder="Supervisor Name"
+          required
+        />
+        <p id="ram"></p>
+        <label for="course">Course:</label>
+        <select class="form-group" id="Course" name="course">
+          <option value="B.Tech">B.Tech</option>
+          <option value="M.Tech">M.Tech</option>
+          <option value="PhD">PhD</option>
+        </select>
+        <label for="Status">Status:</label>
+        <select class="form-group" id="Status" name="Status">
+          <option value="In Progress">In Progress</option>
+          <option value="Completed">Completed</option>
+        </select>
+        <p></p>
+        <button
+          class="btn btn-success"
+          style="background-color: green"
+          type="button"
+          onclick="add()"
+        >
+          Add Project
+        </button>
+        <input
+          type="submit"
+          class="btn btn-info"
+          value="Submit"
+          onclick="sub()"
+        />
+        <button type="button" class="btn btn-dark" id="bck" onclick="back()">
+          Back to last Project
+        </button>
+        <a
+          id="bck"
+          href="index.html"
+          class="previous"
+          style="border-color: cadetblue"
+          >&laquo; Activity</a
+        >
+      </form>
+
+      <br />
+      <table id="tb">
+        <th>Level</th>
+        <th>Title of Project</th>
+        <th>Student Name</th>
+        <th>Supervisor Name</th>
+        <th>Course</th>
+        <th>Status</th>
+      </table>
+      <br />
+      <br />
+    </div>
+    <div class="footer">
+      <div class="container2">© Copyright 2020, NIT Jalandhar</div>
+    </div>
+    <script src="js\a1.js"></script>
+  </body>
+</html>
